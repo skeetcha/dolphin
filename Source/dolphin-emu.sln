@@ -97,6 +97,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "D3D12", "Core\VideoBackends
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "D3DCommon", "Core\VideoBackends\D3DCommon\D3DCommon.vcxproj", "{DEA96CF2-F237-4A1A-B32F-C916769EFB50}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "JuliaInterface", "JuliaInterface\JuliaInterface.vcxproj", "{6E08ABAF-73B5-4D52-9EC7-1432A76F757A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -369,6 +371,14 @@ Global
 		{DEA96CF2-F237-4A1A-B32F-C916769EFB50}.Release|x64.ActiveCfg = Release|x64
 		{DEA96CF2-F237-4A1A-B32F-C916769EFB50}.Release|x64.Build.0 = Release|x64
 		{DEA96CF2-F237-4A1A-B32F-C916769EFB50}.Release|x86.ActiveCfg = Release|x64
+		{6E08ABAF-73B5-4D52-9EC7-1432A76F757A}.Debug|x64.ActiveCfg = Debug|x64
+		{6E08ABAF-73B5-4D52-9EC7-1432A76F757A}.Debug|x64.Build.0 = Debug|x64
+		{6E08ABAF-73B5-4D52-9EC7-1432A76F757A}.Debug|x86.ActiveCfg = Debug|Win32
+		{6E08ABAF-73B5-4D52-9EC7-1432A76F757A}.Debug|x86.Build.0 = Debug|Win32
+		{6E08ABAF-73B5-4D52-9EC7-1432A76F757A}.Release|x64.ActiveCfg = Release|x64
+		{6E08ABAF-73B5-4D52-9EC7-1432A76F757A}.Release|x64.Build.0 = Release|x64
+		{6E08ABAF-73B5-4D52-9EC7-1432A76F757A}.Release|x86.ActiveCfg = Release|Win32
+		{6E08ABAF-73B5-4D52-9EC7-1432A76F757A}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
