@@ -76,6 +76,8 @@
 #include "VideoCommon/VideoBackendBase.h"
 #include "VideoCommon/VideoConfig.h"
 
+#include <JuliaInterface.h>
+
 namespace Core
 {
 static bool s_wants_determinism;
@@ -417,6 +419,8 @@ static void EmuThread(std::unique_ptr<BootParameters> boot, WindowSystemInfo wsi
 
   Movie::Init(*boot);
   Common::ScopeGuard movie_guard{Movie::Shutdown};
+
+  JuliaInterface::Init();
 
   HW::Init();
   Common::ScopeGuard hw_guard{[] {

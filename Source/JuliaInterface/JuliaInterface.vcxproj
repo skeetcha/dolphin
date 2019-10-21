@@ -18,6 +18,12 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="JuliaInterface.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="JuliaInterface.cpp" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
     <ProjectGuid>{6E08ABAF-73B5-4D52-9EC7-1432A76F757A}</ProjectGuid>
