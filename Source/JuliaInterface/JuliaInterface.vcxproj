@@ -76,19 +76,19 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <IncludePath>$(JULIA_DIR)\include\julia;$(IncludePath)</IncludePath>
+    <IncludePath>$(JULIA_DIR)\include\julia;$(ProjectDir)\..\Core;$(IncludePath)</IncludePath>
     <LibraryPath>$(JULIA_DIR)\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <IncludePath>$(JULIA_DIR)\include\julia;$(IncludePath)</IncludePath>
+    <IncludePath>$(JULIA_DIR)\include\julia;$(ProjectDir)\..\Core;$(IncludePath)</IncludePath>
     <LibraryPath>$(JULIA_DIR)\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <IncludePath>$(JULIA_DIR)\include\julia;$(IncludePath)</IncludePath>
+    <IncludePath>$(JULIA_DIR)\include\julia;$(ProjectDir)\..\Core;$(IncludePath)</IncludePath>
     <LibraryPath>$(JULIA_DIR)\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <IncludePath>$(JULIA_DIR)\include\julia;$(IncludePath)</IncludePath>
+    <IncludePath>$(JULIA_DIR)\include\julia;$(ProjectDir)\..\Core;$(IncludePath)</IncludePath>
     <LibraryPath>$(JULIA_DIR)\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -97,6 +97,7 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Lib>
       <AdditionalDependencies>libjulia.dll.a;libopenlibm.dll.a;%(AdditionalDependencies)</AdditionalDependencies>
@@ -108,6 +109,7 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Lib>
       <AdditionalDependencies>libjulia.dll.a;libopenlibm.dll.a;%(AdditionalDependencies)</AdditionalDependencies>
@@ -121,6 +123,7 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
@@ -138,6 +141,7 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>

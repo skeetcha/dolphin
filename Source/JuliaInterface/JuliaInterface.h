@@ -1,8 +1,9 @@
 #pragma once
+#include <string>
+using namespace std;
 
-class JuliaInterface
+namespace JuliaInterface
 {
-public:
-  JuliaInterface();
-  static void Init();
+  void Init();
+  void Shutdown();
 };
